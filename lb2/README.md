@@ -1,5 +1,5 @@
 # M300 - LB2
-M300 - Sven Scheuss  
+M300 - Sukash Sugumaran  
 Webserver mit Apache2 und PHP
 
 ## Inhaltsverzeichnis
