@@ -83,7 +83,7 @@ Unten sieht man den verwendeten Code für die Installation von Apache und PHP
 Als erstes einen Shell aufmachen.  
 
 Die Repository kann mit dem folgenden Link heruntergeladen werden.  
-`git clone https://github.com/svenscheuss/M300-Services.git`  
+`git clone https://github.com/sxkash10/M300-Services.git`  
 
 Danach mit `vagrant up` das Vagrantfile ausführen.  
 
