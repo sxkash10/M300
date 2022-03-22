@@ -1,5 +1,5 @@
 # M300 - LB2
-M300 - Sukash Sugumaran
+M300 - Sukash Sugumaran  
 Webserver mit Apache2 und PHP
 
 ## Inhaltsverzeichnis
@@ -45,7 +45,7 @@ Unten sieht man den verwendeten Code für die Installation von Apache und PHP
   Änderungen in den Netzwerkeinstellungen. Hier wird die vorgegebene IP-Adresse verwendet.  
   `config.vm.network "private_network", ip: "192.168.11.22"`    
 
-  Der Ordner für den Webserver wird synchronisiert von dem lokalen Ordner 'www'
+  Der Ordner für den Webserver wird synchronisiert von dem lokalen Ordner 'www'  
   `config.vm.synced_folder "www/", "/var/www/html", create: true`  
 
   Virtualbox wird hier verwendet  
@@ -66,7 +66,7 @@ Unten sieht man den verwendeten Code für die Installation von Apache und PHP
   Der Apache Service wird neugestartet   
   `sudo service apache2 restart`  
 
-  Für PHP 7.1 müssen spezielle repositories hinzugefügt werden
+  Für PHP 7.1 müssen spezielle repositories hinzugefügt werden  
   `sudo apt-add-repository ppa:ondrej/php`  
   `sudo apt-add-repository ppa:ondrej/apache2`  
   `sudo apt-get update`  
