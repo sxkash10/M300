@@ -1,5 +1,5 @@
 # M300 - LB2
-M300 - Sukash Sugumaran  
+M300 - Sukash Sugumaran
 Webserver mit Apache2 und PHP
 
 ## Inhaltsverzeichnis
@@ -13,7 +13,7 @@ Webserver mit Apache2 und PHP
 
 <a name="einfuehrung"></a>
 ### Einführung
-Anhand dem Vagrantfile werden die zwei Webserver Apache2 und PHP installiert.
+Anhand dem Vagrantfile wird eine Ubuntu VM aufgesetzt und die Dienste Apache2 und PHP installiert.
 
 <a name="wasistapache"></a>
 #### Was ist Apache?
@@ -45,6 +45,7 @@ Unten sieht man den verwendeten Code für die Installation von Apache und PHP
   Änderungen in den Netzwerkeinstellungen. Hier wird die vorgegebene IP-Adresse verwendet.  
   `config.vm.network "private_network", ip: "192.168.11.22"`    
 
+  Der Ordner für den Webserver wird synchronisiert von dem lokalen Ordner 'www'
   `config.vm.synced_folder "www/", "/var/www/html", create: true`  
 
   Virtualbox wird hier verwendet  
@@ -62,17 +63,16 @@ Unten sieht man den verwendeten Code für die Installation von Apache und PHP
   Der Server-Name "localhost" wird in das Konfigurationsfile geschrieben  
   `echo 'ServerName localhost' >> /etc/apache2/apache2.conf`
 
-  Der Aapche Service wird neugestartet   
+  Der Apache Service wird neugestartet   
   `sudo service apache2 restart`  
 
-
+  Für PHP 7.1 müssen spezielle repositories hinzugefügt werden
   `sudo apt-add-repository ppa:ondrej/php`  
   `sudo apt-add-repository ppa:ondrej/apache2`  
   `sudo apt-get update`  
 
   PHP Installation  
   `sudo apt-get install php7.1 -y`  
-
 
   `sudo service apache2 restart`  
 `SHELL`  
@@ -82,16 +82,17 @@ Unten sieht man den verwendeten Code für die Installation von Apache und PHP
 ### Anleitung
 Als erstes einen Shell aufmachen.  
 
-Die Repository kann mit dem folgenden Link heruntergeladen werden.  
-`git clone https://github.com/sxkash10/M300-Services.git`  
+Die Repository kann mit dem folgenden Befehl heruntergeladen werden.  
+`git clone https://github.com/svenscheuss/M300-Services.git`
 
-Danach mit `vagrant up` das Vagrantfile ausführen.  
+In das Repository wechseln
+
+Danach mit `vagrant up` um das Vagrantfile auszuführen.  
 
 Virtualbox öffnen und schauen, ob die VM läuft.
 
-Einen Browser öffnen und die IP-Adresse "192.168.11.22" eingeben. Danach sollte man die Startseite von Apache sehen.  
-
-Um zu testen, ob PHP funktioniert, kann man mit den folgenden URL prüfen "192.168.11.22/test.php"
+Einen Browser öffnen und die IP-Adresse "192.168.11.22" eingeben. Danach sollte man das Modul sehen.
+Um nun noch PHP zu testen kann man "192.168.11.22/test.php" aufrufen. Es sollte eine Übersicht über die PHP version ersichtlich sein.
 
 <a name="quellenverzeichnis"></a>
 ### Quellenverzeichnis
