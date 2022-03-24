@@ -7,29 +7,34 @@ Webserver mit Apache2 und PHP
 - [Einführung](#einfuehrung)
   - [Was ist Apache?](#wasistapache)
   - [Was ist PHP?](#wasistphp)
+- [Grafische Übersicht](#grafik)
 - [Code](#Code)
 - [Anleitung](#anleitung)
 - [Quellenverzeichnis](#quellenverzeichnis)
 
 <a name="einfuehrung"></a>
-### Einführung
+## Einführung
 Anhand dem Vagrantfile wird eine Ubuntu VM aufgesetzt und die Dienste Apache2 und PHP installiert.
 
 <a name="wasistapache"></a>
-#### Was ist Apache?
+### Was ist Apache?
 Apache ist ein beliebter Open-Source, plattformübergreifender Webserver, der nach den Zahlen der beliebteste Webserver überhaupt ist.
 
 Da die Funktionsweise eines Webservers sehr komplex ist, besteht die grundlegende Aufgabe aller Webserver darin, Anfragen von Clients anzunehmen (z.B. den Webbrowser eines Besuchers) und dann die Antwort auf diese Anfrage zu senden (z.B. die Komponenten der Seite, die ein Besucher sehen möchte).
 
 
 <a name="wasistphp"></a>
-#### Was ist PHP?
+### Was ist PHP?
 PHP ist eine Abkürzung für „Personal Home Page Tool“ oder auch „Hypertext Preprocessor“. PHP ist eine Skript-Sprache. Eine Skript-Sprache ist eine Programmier-Sprache, die meistens nur für kleinere Programme genutzt wird.
 
 Sie verwenden zum Beispiel PHP für ein Kontakt-Formular auf Ihrer Webseite. PHP überprüft ob die Eingaben, die ein Webseiten-Besucher macht vollständig sind. PHP versendet dann das Kontakt-Formular als E-Mail.
 
+<a name="grafik"></a>
+## Grafische Übersicht
+![image](https://github.com/sxkash10/M300-Services/blob/main/lb2/images/grafik.png)
+
 <a name="Code"></a>
-### Code
+## Code
 Unten sieht man den verwendeten Code für die Installation von Apache und PHP  
 
 
@@ -79,7 +84,7 @@ Unten sieht man den verwendeten Code für die Installation von Apache und PHP
 `end`  
 
 <a name="anleitung"></a>
-### Anleitung
+## Anleitung
 Als erstes einen Shell aufmachen.  
 
 Die Repository kann mit dem folgenden Befehl heruntergeladen werden.  
@@ -95,7 +100,7 @@ Einen Browser öffnen und die IP-Adresse "192.168.11.22" eingeben. Danach sollte
 Um nun noch PHP zu testen kann man "192.168.11.22/test.php" aufrufen. Es sollte eine Übersicht über die PHP version ersichtlich sein.
 
 <a name="quellenverzeichnis"></a>
-### Quellenverzeichnis
+## Quellenverzeichnis
 
 - Was ist Apache? (https://kinsta.com/de/wissensdatenbank/was-ist-apache-web-server/)
 - Mehr über Apache: (https://httpd.apache.org/)  
