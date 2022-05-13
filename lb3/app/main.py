@@ -43,7 +43,7 @@ def index():
     return render_template('index.html', users=users)
 
 if __name__ == "__main__":
-    clear_tables()
+    #clear_tables()
     db.create_all()
     insert_user()
     app.run(debug=True, host='0.0.0.0')
