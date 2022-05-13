@@ -8,7 +8,7 @@ volumes:
     database:
 
 services:
-    flask-app:
+    app:
         container_name: lb3_py
         build: app
         restart: always
@@ -18,8 +18,10 @@ services:
             - ./app:/app
         networks:
             - lb3_network
+        links:
+            - db
 
-    mysql-db:
+    db:
         container_name: lb3_db
         image: mysql:latest
         restart: always
