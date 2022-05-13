@@ -26,15 +26,25 @@ Flask ist ein vom österreichischen Programmierer Armin Ronacher in Python gesch
 
 <a name="serviceanwendung"></a>
 ## Service Anwendung
-Das Aufsetzen der VM ist sehr simpel. Als erstes muss das Repository heruntergeladen werden. Dies wird mit folgendem Befehl gemacht:
+Das Aufsetzen der Docker-Container ist sehr simpel. Als erstes muss das Repository heruntergeladen werden. Dies wird mit folgendem Befehl gemacht:
 
-    `git clone https://github.com/misterT187/M300-Services.git`
+`git clone https://github.com/sxkash10/M300-Services.git`
 
-Als nächstes öffnet man eine GIT-Bash im Folder M300-Services/lb3
-Anschliessend muss nurnoch der Befehl `vagrant up` ausgeführt werden.
+
+
+Als nächstes kann mit dem nächsten Befehl die Docker Container gestartet werden.
+
+
+
+'docker-compose up'
+
+Danach sollte man auf seinem lokalen Browser über die URL 'localhost:5000' auf die python-flask Applikation zugreifen können.
+Mit python-flask und SQL-Alchemy als ORM kann man nun verschiedenste Applikationen und Webseiten bauen.
+Je öfter man den python Container neustarten wird, wird die Datenbank gefühlt, da die Applikation die Tabelle nicht löscht. Um dies nun zu ändern kann man im file app/main.py auf Zeile 46 den "#" heraus löschen. Danach sollten die Tabellen normal gelöscht und wieder gefühlt werden.
 
 <a name="grafiken"></a>
 ## Grafische Übersicht
+![image](https://github.com/sxkash10/M300-Services/blob/main/lb3/Plan.png)
 
 <a name="befehle"></a>
 ## Befehle
