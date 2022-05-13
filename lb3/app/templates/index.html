@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>M300 LB3</title>
+</head>
+<body>
+
+    <h1>M300 LB3</h1>
+    <table>
+    {% for user in users %}
+        <tr>
+            <td>
+                <svg height="50" width="50">
+                  <circle cx="25" cy="25" r="10" fill="#2cfc03"/>
+                </svg>
+            </td>
+            <td>{{ user.firstname }}</td>
+            <td>{{ user.lastname }}</td>
+            <td>{{ user.age }}</td>
+        </tr>
+    {% endfor %}
+    </table>
+</body>
+</html>

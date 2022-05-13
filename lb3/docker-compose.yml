@@ -1,0 +1,34 @@
+version: "3"
+
+networks:
+    lb3_network:
+
+volumes:
+    app:
+    database:
+
+services:
+    flask-app:
+        container_name: lb3_py
+        build: app
+        restart: always
+        ports:
+            - '5000:5000'
+        volumes:
+            - ./app:/app
+        networks:
+            - lb3_network
+
+    mysql-db:
+        container_name: lb3_db
+        image: mysql:latest
+        restart: always
+        environment:
+            MYSQL_ROOT_PASSWORD: root
+            MYSQL_DATABASE: lb3
+        ports:
+            - '3306:3306'
+        volumes:
+            - ./database:/var/lib/mysql
+        networks:
+            - lb3_network
