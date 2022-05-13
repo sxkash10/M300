@@ -18,7 +18,7 @@ Sukash Sugumaran
 
 <a name="beschrieb"></a>
 ## Service Beschreibung
-In einem Dreierteam (Sven Scheuss, Sukash Sugumaran und Thomas Mägerle) haben wir dieses Projekt durchgeführt. Wir haben uns überlegt eine Website zu hosten. Dafür wir uns für das Tool Python Flask da Sven Scheuss viel Erfahrung hat.
+In einem Dreierteam (Sven Scheuss, Sukash Sugumaran und Thomas Mägerle) haben wir dieses Projekt durchgeführt. Wir haben uns überlegt eine Website zu hosten. Wir haben mit dem Tool Python Flask gearbeitet, da Sven Scheuss viel Erfahrung damit hat. Zusätzlich verwenden wir noch MySQL.
 <a name="pythonflask"></a>
 ### Python Flask
 Flask ist ein vom österreichischen Programmierer Armin Ronacher in Python geschriebenes Webframework. Der Fokus von Flask liegt auf Erweiterbarkeit und guter Dokumentation. Die einzigen Abhängigkeiten sind Jinja2, eine Template-Engine, und Werkzeug, eine Bibliothek zum Erstellen von WSGI-Anwendungen.
@@ -30,7 +30,8 @@ Das Aufsetzen der VM ist sehr simpel. Als erstes muss das Repository heruntergel
     `git clone https://github.com/sxkash10/M300-Services.git`
 
 Als nächstes öffnet man eine GIT-Bash im Folder M300-Services/lb3
-Anschliessend muss nurnoch der Befehl `vagrant up` ausgeführt werden.
+Anschliessend muss nur noch der Befehl `vagrant up` ausgeführt werden.
+Danach 
 
 <a name="grafiken"></a>
 ## Grafische Übersicht
